@@ -14,7 +14,7 @@ import {UserCircleIcon} from 'react-native-heroicons/outline';
 
 const Forget = ({navigation}) => {
   return (
-    <KeyboardAvoidingView className="bg-white flex flex-1 h-auto">
+    <View className="bg-white flex flex-1 ">
       <ImageBackground
         className="w-full h-[415px]"
         source={require(`../assets/images/Background.jpg`)}
@@ -77,7 +77,7 @@ const Forget = ({navigation}) => {
           </Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-    </KeyboardAvoidingView>
+    </View>
   );
 };
 

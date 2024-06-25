@@ -16,7 +16,7 @@ import {LockClosedIcon, UserCircleIcon} from 'react-native-heroicons/outline';
 
 const Login = ({navigation}) => {
   return (
-    <KeyboardAvoidingView className="bg-background flex flex-1 h-auto">
+    <View className="bg-background flex flex-1 ">
       <StatusBar hidden />
       <Image
         source={require(`../assets/images/Text.png`)}
@@ -118,7 +118,7 @@ const Login = ({navigation}) => {
           </Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-    </KeyboardAvoidingView>
+    </View>
   );
 };
 

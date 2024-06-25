@@ -12,6 +12,7 @@ module.exports = {
       fontFamily: {
         Regular:`Poppins-Regular`,
         Medium:`Poppins-Medium`,
+        SemiBold:`Poppins-SemiBold`,
       },
     },
   },

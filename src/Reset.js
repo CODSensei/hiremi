@@ -2,7 +2,6 @@ import {
   Image,
   ImageBackground,
   KeyboardAvoidingView,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -42,7 +41,7 @@ const Reset = ({navigation}) => {
         />
       </ImageBackground>
       <KeyboardAvoidingView className="bg-white w-full h-[565px] top-14 border rounded-t-[32px]">
-        <Text className="text-black font-Regular-normal text-base text-start ml-8 mt-6">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           New Password
           <Text className="text-red-600">*</Text>
         </Text>

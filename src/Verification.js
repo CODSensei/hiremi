@@ -15,7 +15,7 @@ import {ClockIcon, UserCircleIcon} from 'react-native-heroicons/outline';
 
 const Verification = ({navigation}) => {
   return (
-    <KeyboardAvoidingView className="bg-white flex flex-1 h-auto">
+    <View className="bg-white flex flex-1 ">
       <ImageBackground
         className="w-full h-[415px] "
         source={require(`../assets/images/Background.jpg`)}
@@ -76,7 +76,7 @@ const Verification = ({navigation}) => {
           <Text className="text-white text-center my-auto font-Regular font-normal text-base">Confirm</Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-    </KeyboardAvoidingView>
+    </View>
   );
 };
 
