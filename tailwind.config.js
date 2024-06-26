@@ -13,6 +13,7 @@ module.exports = {
         background: '#098CE31A',
         Border: '#098CE3',
         BlurHR: '#00000040',
+        Verified: '#1CAA77',
       },
     },
   },

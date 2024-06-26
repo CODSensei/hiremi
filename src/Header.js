@@ -1,54 +1,10 @@
-import {
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import React, {useState} from 'react';
-import {
-  ArrowLeftStartOnRectangleIcon,
-  ArrowRightStartOnRectangleIcon,
-  Bars3CenterLeftIcon,
-  BellAlertIcon,
-  CheckBadgeIcon,
-  EyeIcon,
-} from 'react-native-heroicons/outline';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faCaretDown, faCaretUp} from '@fortawesome/free-solid-svg-icons';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-const Home = ({navigation}) => {
-  const [pressed, setPressed] = useState(false);
-
+const Header = () => {
+    pressed = false
   return (
-    <ScrollView className="bg-background flex flex-1">
-      {/* Header starts */}
-
-      <View className="top-10 h-19 flex flex-row mx-7">
-        <Image
-          source={require(`../assets/images/Text.png`)}
-          resizeMode="contain"
-          className="self-start  w-[88.42px] h-[22px] "
-        />
-        <View className="left-44 pr-20  h-full flex flex-row">
-          <BellAlertIcon color={'#3D4652'} size={28} />
-        </View>
-        <TouchableOpacity
-          className="left-28 bottom-1  rotate-180"
-          onPress={() => {
-            navigation.navigate('Profile');
-          }}>
-          <Bars3CenterLeftIcon color={'#3d4652'} size={32} />
-        </TouchableOpacity>
-      </View>
-
-      {/* Header ends */}
-
-      {/* Upper card starts */}
-
-      <View className="h-44 top-5 mx-6 mt-8">
-        <Text className="text-Border font-Regular text-sm">
+    <Text className="text-Border font-Regular text-sm">
           Hey, Good Morning
         </Text>
         {pressed ? (
@@ -147,16 +103,9 @@ const Home = ({navigation}) => {
             </View>
           </>
         )}
-      </View>
+  )
+}
 
-       {/* Upper card ends  */}
+export default Header
 
-        <View className="bg-pink-400 h-16"></View>
-
-    </ScrollView>
-  );
-};
-
-export default Home;
-
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({})
