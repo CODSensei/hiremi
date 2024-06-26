@@ -1,4 +1,4 @@
-import {Easing, Image, StyleSheet, Text, View} from 'react-native';
+import {Easing, Image, StatusBar, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import * as Animatable from 'react-native-animatable';
 import Animated, {FadeIn, Transition} from 'react-native-reanimated';
@@ -15,6 +15,7 @@ const Splash = ({navigation}) => {
 
   return (
     <View className="bg-primary flex flex-1 justify-center items-center">
+      <StatusBar hidden/>
       <View>
         <Animatable.Image
           delay={500}

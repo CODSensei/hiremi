@@ -3,7 +3,6 @@ import {
   ImageBackground,
   KeyboardAvoidingView,
   ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -15,7 +14,7 @@ import {ClockIcon, UserCircleIcon} from 'react-native-heroicons/outline';
 
 const Verification = ({navigation}) => {
   return (
-    <View className="bg-white flex flex-1 ">
+    <ScrollView className="bg-white flex flex-1 ">
       <ImageBackground
         className="w-full h-[415px] "
         source={require(`../assets/images/Background.jpg`)}
@@ -26,10 +25,10 @@ const Verification = ({navigation}) => {
           className="self-center w-[88.42px] h-[22px] top-10"
         />
 
-        <Text className="text-black font-Medium-medium text-center text-[22px] top-16">
+        <Text className="text-black font-Medium text-center text-[22px] top-16">
           Verify you Email address
         </Text>
-        <Text className="text-black font-Regular-normal text-center text-[22px] top-16">
+        <Text className="text-black font-Regular text-center text-[22px] top-16">
           Hey, have you Received!
         </Text>
         <Image
@@ -38,8 +37,8 @@ const Verification = ({navigation}) => {
           className="self-center w-[323px] h-[323px] top-20"
         />
       </ImageBackground>
-      <KeyboardAvoidingView className="bg-white w-full h-[465px] top-28 border rounded-t-[32px]">
-        <Text className="text-black font-Regular-normal text-base text-center mt-8">
+      <KeyboardAvoidingView className="bg-white w-full h-[400px] top-28 border rounded-t-[32px]">
+        <Text className="text-black font-Regular text-base text-center mt-8">
           Enter One Time Password
           <Text className="text-red-600">*</Text>
         </Text>
@@ -48,7 +47,8 @@ const Verification = ({navigation}) => {
             <ClockIcon stroke="#098CE3"></ClockIcon>
           </View>
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 w-4/5 font-Regular text-base"
+              placeholderTextColor={'#00000040'}
             placeholder="XXXXXX"
             autoCorrect={false}
             keyboardType="email-address"
@@ -58,25 +58,23 @@ const Verification = ({navigation}) => {
         </View>
 
 
-        <Text className="text-black text-center mt-5 font-Regular-normal text-xs">
+        <Text className="text-black text-center mt-5 font-Regular text-xs">
           Please, Enter your{` `}
-          <Text className="text-primary">six digit{' '}</Text>
-          <Text className="text-black font-Regular-normal text-xs">
+          <Text className="text-primary font-Regular">six digit{' '}</Text>
             code that you have received in{` `}
           </Text>
-        </Text>
-        <Text className="text-black text-center font-Regular-normal text-xs mt-1">
-          your mail box. <Text className="text-primary font-Regular font-normal text-xs">Resend OTP</Text>
+        <Text className="text-black text-center font-Regular text-xs mt-1">
+          your mail box. <Text className="text-primary font-Regular underline text-xs">Resend OTP</Text>
         </Text>
         <TouchableOpacity
           className="border border-Border mx-8 h-12 bg-Border rounded mt-12"
           onPress={() => {
             navigation.navigate('Reset');
           }}>
-          <Text className="text-white text-center my-auto font-Regular font-normal text-base">Confirm</Text>
+          <Text className="text-white text-center my-auto font-Regular text-base">Confirm</Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-    </View>
+    </ScrollView>
   );
 };
 

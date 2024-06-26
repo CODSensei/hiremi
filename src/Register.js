@@ -19,7 +19,7 @@ import {Dropdown} from 'react-native-element-dropdown';
 import {
   EyeIcon,
   EyeSlashIcon,
-  UserCircleIcon,
+  LockClosedIcon,
 } from 'react-native-heroicons/outline';
 
 const Register = ({navigation}) => {
@@ -63,10 +63,22 @@ const Register = ({navigation}) => {
     [],
   );
 
-  const data = [{label: 'Item 1', value: '1'},{label: 'Item 2', value: '2'}];
-  const data2 = [{label: 'Item 1', value: '1'},{label: 'Item 2', value: '2'}];
-  const data3 = [{label: 'Item 1', value: '1'},{label: 'Item 2', value: '2'}];
-  const data4 = [{label: 'Item 1', value: '1'},{label: 'Item 2', value: '2'}];
+  const data = [
+    {label: 'Select State ', value: '0'},
+    {label: 'Item 1', value: '1'},
+  ];
+  const data2 = [
+    {label: 'Select Branch ', value: '0'},
+    {label: 'Item 1', value: '1'},
+  ];
+  const data3 = [
+    {label: 'Select Course ', value: '0'},
+    {label: 'Item 1', value: '1'},
+  ];
+  const data4 = [
+    {label: 'Select Year ', value: '0'},
+    {label: 'Item 1', value: '1'},
+  ];
 
   const [selectedId, setSelectedId] = useState(0);
   const [date, setDate] = useState(new Date());
@@ -85,15 +97,15 @@ const Register = ({navigation}) => {
         className="self-center w-[88.42px] h-[22px] top-10"
       />
 
-      <Text className="text-black font-Medium-medium text-center text-[22px] top-16">
+      <Text className="text-black font-Medium text-center text-[22px] top-16">
         Register to get started,
       </Text>
-      <Text className="text-black font-Regular-normal text-center text-[22px] top-16">
+      <Text className="text-black font-Regular text-center text-[22px] top-16">
         Start your journey with us.
       </Text>
 
-      <KeyboardAvoidingView className="bg-white w-full h-[1895px] top-24 border border-Border rounded-t-[32px]">
-        <Text className="text-black font-SemiBold text-center mt-10 text-[22px]">
+      <KeyboardAvoidingView className="bg-white w-full h-[1980px] top-24 border border-Border rounded-t-[32px]">
+        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
           Personal Information
         </Text>
 
@@ -103,8 +115,10 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1  w-4/5 font-Regular text-base"
+              placeholderTextColor={'#00000040'}
             placeholder="John Doe"
+            placeholderStyle={styles.placeholderStyle}
             autoCapitalize="true"
             autoComplete="false"
             autoCorrect={false}
@@ -117,7 +131,9 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 w-4/5 font-Regular text-base"
+              placeholderTextColor={'#00000040'}
+              placeholderStyle={styles.placeholderStyle}
             placeholder="Robert Dave"
             autoCapitalize="true"
             autoComplete="false"
@@ -131,7 +147,7 @@ const Register = ({navigation}) => {
         <View className="flex bg-[`#d9d9d9] flex-row mx-8 mt-2 justify-evenly">
           <RadioGroup
             layout="row"
-            className="font-bold px-8 justify-around text-black"
+            className="font-bold px-8 justify-around font-Regular text-black"
             horizontal={true}
             color="#098CE3"
             radioButtons={radiogroup_Options}
@@ -146,7 +162,9 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 font-Regular w-4/5 text-base"
+              placeholderTextColor={'#00000040'}
+              placeholderStyle={styles.placeholderStyle}
             placeholder="youremail@gmail.com"
             autoCapitalize="false"
             autoComplete="false"
@@ -166,8 +184,11 @@ const Register = ({navigation}) => {
               size={22}></FontAwesomeIcon>
           </View>
           <TextInput
-            className="pl-2 mr-28 w-auto font-Regular font-normal text-base"
-            placeholder="DD/MM/YYYY"></TextInput>
+            className="pl-3 mr-[92px] w-32 pb-1  font-Regular text-base"
+              placeholderTextColor={'#00000040'}
+            placeholder="DD/MM/YYYY"
+            placeholderStyle={styles.placeholderStyle}
+            ></TextInput>
           <>
             <Button
               className="bg-[`#d9d9d9`] border-Border w-12 flex rounded justify-center items-center"
@@ -189,13 +210,13 @@ const Register = ({navigation}) => {
               <FontAwesomeIcon
                 icon={faCaretDown}
                 color={'#1C1B1FBF'}
-                size={12}
+                size={14}
               />
             </Button>
           </>
         </View>
 
-        <Text className="text-black font-SemiBold text-center mt-10 text-[22px]">
+        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
           Contact Information
         </Text>
 
@@ -205,7 +226,9 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 w-4/5font-Regular text-base"
+              placeholderTextColor={'#00000040'}
+            placeholderStyle={styles.placeholderStyle}
             placeholder="+91"
             keyboardAppearance="default"
             maxLength={10}
@@ -219,7 +242,9 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 w-4/5 font-Regular  text-base"
+              placeholderTextColor={'#00000040'}
+            placeholderStyle={styles.placeholderStyle}
             placeholder="+91"
             keyboardAppearance="default"
             maxLength={10}
@@ -227,7 +252,7 @@ const Register = ({navigation}) => {
             autoComplete="false"></TextInput>
         </View>
 
-        <Text className="text-black font-SemiBold text-center mt-10 text-[22px]">
+        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
           Educational Information
         </Text>
 
@@ -237,7 +262,9 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 font-Regular pb-1 w-4/5 text-base"
+              placeholderTextColor={'#00000040'}
+            placeholderStyle={styles.placeholderStyle}
             placeholder="College Name Here"
             autoCapitalize="true"
             autoComplete="false"
@@ -251,10 +278,12 @@ const Register = ({navigation}) => {
         </Text>
         <Dropdown
           className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+              placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
-          placeholder="Select State"
-          search={true}
           labelField="label"
+          iconColor="#1C1B1FBF"
+          search={true}
+          data={data}
           valueField="Value"
           searchPlaceholder="Search..."
           value={Value}
@@ -262,6 +291,9 @@ const Register = ({navigation}) => {
           onChange={item => {
             setValue(item.Value);
           }}
+          renderRightIcon={() => (
+            <FontAwesomeIcon icon={faCaretDown} color={'#1C1B1FBF'} size={14} />
+          )}
         />
 
         <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
@@ -270,9 +302,10 @@ const Register = ({navigation}) => {
         </Text>
         <Dropdown
           className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+              placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
-          placeholder="Select Branch"
           search={true}
+          data={data2}
           labelField="label"
           valueField="Value2"
           searchPlaceholder="Search..."
@@ -281,6 +314,10 @@ const Register = ({navigation}) => {
           onChange={item2 => {
             setValue2(item2.Value2);
           }}
+          iconColor="#1C1B1FBF"
+          renderRightIcon={() => (
+            <FontAwesomeIcon icon={faCaretDown} color={'#1C1B1FBF'} size={14} />
+          )}
         />
 
         <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
@@ -289,9 +326,10 @@ const Register = ({navigation}) => {
         </Text>
         <Dropdown
           className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+              placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
-          placeholder="Select Course"
           search={true}
+          data={data3}
           labelField="label"
           valueField="Value3"
           searchPlaceholder="Search..."
@@ -300,6 +338,10 @@ const Register = ({navigation}) => {
           onChange={item3 => {
             setValue3(item3.Value3);
           }}
+          iconColor="#1C1B1FBF"
+          renderRightIcon={() => (
+            <FontAwesomeIcon icon={faCaretDown} color={'#1C1B1FBF'} size={14} />
+          )}
         />
 
         <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
@@ -308,9 +350,10 @@ const Register = ({navigation}) => {
         </Text>
         <Dropdown
           className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+              placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
-          placeholder="Select Year"
           search={true}
+          data={data4}
           labelField="label"
           valueField="Value4"
           searchPlaceholder="Search..."
@@ -319,9 +362,13 @@ const Register = ({navigation}) => {
           onChange={item4 => {
             setValue4(item4.Value4);
           }}
+          iconColor="#1C1B1FBF"
+          renderRightIcon={() => (
+            <FontAwesomeIcon icon={faCaretDown} color={'#1C1B1FBF'} size={14} />
+          )}
         />
 
-        <Text className="text-black font-SemiBold text-center mt-10 text-[22px]">
+        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
           Let's Create Password
         </Text>
         <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
@@ -330,10 +377,12 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row justify-between  mx-8 h-12 mt-2 border rounded border-Border">
           <View className="border-0.5 border-Border w-12 flex justify-center items-center">
-            <UserCircleIcon stroke="#098CE3"></UserCircleIcon>
+            <LockClosedIcon stroke="#098CE3"></LockClosedIcon>
           </View>
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 font-Regular pb-1  text-base"
+              placeholderTextColor={'#00000040'}
+            placeholderStyle={styles.placeholderStyle}
             placeholder="**********"
             autoCapitalize="false"
             autoComplete="false"
@@ -353,16 +402,18 @@ const Register = ({navigation}) => {
           </TouchableOpacity>
         </View>
 
-        <Text className="text-black font-Regular-normal text-base text-start ml-8 mt-4">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Confirm New Password
           <Text className="text-red-600">*</Text>
         </Text>
         <View className="flex flex-row justify-between  mx-8 h-12 mt-2 border rounded border-Border">
           <View className="border-0.5 border-Border w-12 flex justify-center items-center">
-            <UserCircleIcon stroke="#098CE3"></UserCircleIcon>
+            <LockClosedIcon stroke="#098CE3"></LockClosedIcon>
           </View>
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 font-Regular pb-1 text-base"
+              placeholderTextColor={'#00000040'}
+            placeholderStyle={styles.placeholderStyle}
             placeholder="**********"
             autoCapitalize="false"
             autoComplete="false"
@@ -381,6 +432,16 @@ const Register = ({navigation}) => {
             )}
           </TouchableOpacity>
         </View>
+
+        <TouchableOpacity
+          className="border border-Border mx-8 h-12 bg-Border rounded mt-8"
+          onPress={() => {
+            navigation.navigate('Login');
+          }}>
+          <Text className="text-white text-center my-auto font-Regular font-normal text-base">
+            Reset Password
+          </Text>
+        </TouchableOpacity>
       </KeyboardAvoidingView>
     </ScrollView>
   );
@@ -391,5 +452,7 @@ export default Register;
 const styles = StyleSheet.create({
   placeholderStyle: {
     fontSize: 16,
+    color: '#00000040',
+    fontFamily: 'Poppins-Regular',
   },
 });

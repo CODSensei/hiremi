@@ -6,6 +6,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  ScrollView,
   View,
 } from 'react-native';
 import React, {useState} from 'react';
@@ -19,7 +20,7 @@ const Reset = ({navigation}) => {
   const [toggle, settoggle] = useState(true);
   const [toggle2, settoggle2] = useState(true);
   return (
-    <KeyboardAvoidingView className="bg-white flex flex-1">
+    <ScrollView className="bg-white flex flex-1">
       <ImageBackground
         className="w-full h-[415px]"
         source={require(`../assets/images/Background.jpg`)}>
@@ -28,10 +29,10 @@ const Reset = ({navigation}) => {
           resizeMode="contain"
           className="self-center w-[88.42px] h-[22px] top-10"
         />
-        <Text className="text-black font-Medium-medium text-center text-[22px] top-16">
+        <Text className="text-black font-Medium text-center text-[22px] top-16">
           Create new Password,
         </Text>
-        <Text className="text-black font-Regular-normal text-center text-[22px] top-16">
+        <Text className="text-black font-Regular text-center text-[22px] top-16">
           make it Stronger !
         </Text>
         <Image
@@ -40,7 +41,7 @@ const Reset = ({navigation}) => {
           className="self-center w-[300px] h-[300px] top-24"
         />
       </ImageBackground>
-      <KeyboardAvoidingView className="bg-white w-full h-[565px] top-14 border rounded-t-[32px]">
+      <KeyboardAvoidingView className="bg-white w-full h-[400px] top-14 border rounded-t-[32px]">
         <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           New Password
           <Text className="text-red-600">*</Text>
@@ -50,7 +51,8 @@ const Reset = ({navigation}) => {
             <UserCircleIcon stroke="#098CE3"></UserCircleIcon>
           </View>
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 font-Regular text-base"
+              placeholderTextColor={'#00000040'}
             placeholder="**********"
             autoCapitalize="false"
             autoComplete="false"
@@ -70,7 +72,7 @@ const Reset = ({navigation}) => {
           </TouchableOpacity>
         </View>
 
-        <Text className="text-black font-Regular-normal text-base text-start ml-8 mt-4">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-4">
           Confirm New Password
           <Text className="text-red-600">*</Text>
         </Text>
@@ -79,7 +81,8 @@ const Reset = ({navigation}) => {
             <UserCircleIcon stroke="#098CE3"></UserCircleIcon>
           </View>
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 font-Regular text-base"
+              placeholderTextColor={'#00000040'}
             placeholder="**********"
             autoCapitalize="false"
             autoComplete="false"
@@ -98,21 +101,21 @@ const Reset = ({navigation}) => {
             )}
           </TouchableOpacity>
         </View>
-        <Text className="text-black font-Regular-normal text-center text-xs mt-3">
+        <Text className="text-black font-Regular text-center text-xs mt-3">
           Password must be{' '}
-          <Text className="text-primary">8 digit{' '}</Text>
-          <Text className="text-black font-Regular-normal">long with combination of{` `}</Text>
+          <Text className="text-primary font-Regular">8 digit{' '}</Text>
+          long with combination of{` `}
         </Text>
-        <Text className="text-black font-Regular-normal text-center text-xs">alphanumeric values,</Text>
+        <Text className="text-black font-Regular text-center text-xs">alphanumeric values,</Text>
         <TouchableOpacity
           className="border border-Border mx-8 h-12 bg-Border rounded mt-8"
           onPress={() => {
             navigation.navigate('Login');
           }}>
-          <Text className="text-white text-center my-auto font-Regular font-normal text-base">Reset Password</Text>
+          <Text className="text-white text-center my-auto font-Regular text-base">Reset Password</Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-    </KeyboardAvoidingView>
+    </ScrollView>
   );
 };
 

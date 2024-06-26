@@ -14,7 +14,7 @@ import {UserCircleIcon} from 'react-native-heroicons/outline';
 
 const Forget = ({navigation}) => {
   return (
-    <View className="bg-white flex flex-1 ">
+    <ScrollView className="bg-white flex flex-1 ">
       <ImageBackground
         className="w-full h-[415px]"
         source={require(`../assets/images/Background.jpg`)}
@@ -25,10 +25,10 @@ const Forget = ({navigation}) => {
           className="self-center w-[88.42px] h-[22px] top-10"
         />
 
-        <Text className="text-black font-Medium-medium text-center text-[22px] top-16">
+        <Text className="text-black font-Medium text-center text-[22px] top-16">
           Forget Your Password
         </Text>
-        <Text className="text-black font-Regular-normal text-center text-[22px] top-16">
+        <Text className="text-black font-Regular text-center text-[22px] top-16">
           No worries, it happens!
         </Text>
         <Image
@@ -37,8 +37,8 @@ const Forget = ({navigation}) => {
           className="self-center w-[375px] h-[375px] top-20"
         />
       </ImageBackground>
-      <KeyboardAvoidingView className="bg-white w-full h-[465px] top-28 border rounded-t-[32px]">
-        <Text className="text-black font-Regular-normal text-base text-center mt-8">
+      <KeyboardAvoidingView className="bg-white w-full h-[400px] top-28 border rounded-t-[32px]">
+        <Text className="text-black font-Regular text-base text-center mt-8">
           Enter Email Address
           <Text className="text-red-600">*</Text>
         </Text>
@@ -47,7 +47,8 @@ const Forget = ({navigation}) => {
             <UserCircleIcon stroke="#098CE3"></UserCircleIcon>
           </View>
           <TextInput
-            className="pl-4 font-Regular font-normal text-base"
+            className="pl-4 pb-1 w-4/5 font-Regular text-base"
+              placeholderTextColor={'#00000040'}
             placeholder="youremail@gmail.com"
             autoCorrect={false}
             keyboardType="email-address"
@@ -56,14 +57,14 @@ const Forget = ({navigation}) => {
             autoComplete="false"></TextInput>
         </View>
 
-        <Text className="text-black text-center mt-5 font-Regular-normal text-xs">
+        <Text className="text-black text-center mt-5 font-Regular text-xs">
           Enter your email address to receive a{' '}
-          <Text className="text-primary font-Regular font-normal text-xs">
+          <Text className="text-primary font-Regular text-xs">
             verification code{' '}
           </Text>
           in
         </Text>
-        <Text className="text-black text-center font-Regular font-normal text-xs mt-1">
+        <Text className="text-black text-center font-Regular text-xs mt-1">
           your mail box.
         </Text>
 
@@ -72,12 +73,12 @@ const Forget = ({navigation}) => {
           onPress={() => {
             navigation.navigate('Verification');
           }}>
-          <Text className="text-white text-center my-auto font-Regular-normal text-base">
+          <Text className="text-white text-center my-auto font-Regular text-base">
             Send OTP
           </Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
-    </View>
+    </ScrollView>
   );
 };
 
