@@ -69,7 +69,7 @@ const Profile = ({navigation}) => {
           <>
             <View className="bg-white w-11/12 pl-1 h-11 mt-3 flex flex-row items-center">
               <UserCircleIcon color={'#1C1B1F'} size={30} />
-              <Text className="text-black ml-3 mr-32 font-Regular text-sm">
+              <Text className="text-black ml-2 mr-28 font-Regular text-sm">
                 Personal InFormation
               </Text>
               <TouchableOpacity onPress={() => setClicked(!clicked)}>
@@ -138,7 +138,7 @@ const Profile = ({navigation}) => {
           <>
             <View className="bg-white w-11/12 pl-2 h-11 mt-3 flex flex-row items-center">
               <UserCircleIcon color={'#1C1B1F'} size={30} />
-              <Text className="text-black ml-3 mr-32 font-Regular text-sm">
+              <Text className="text-black ml-2 mr-28 font-Regular text-sm">
                 Personal InFormation
               </Text>
               <TouchableOpacity onPress={() => setClicked(!clicked)}>
@@ -152,14 +152,14 @@ const Profile = ({navigation}) => {
             </View>
             <View className="bg-white w-11/12 pl-2 h-11 mt-2 flex flex-row items-center">
               <ExclamationCircleIcon color={'#1C1B1F'} size={30} />
-              <Text className="text-black ml-3 mr-56 font-Regular text-sm">
+              <Text className="text-black ml-2 mr-52 font-Regular text-sm">
                 Security
               </Text>
               <ChevronDownIcon color={'#1C1B1F'} size={20} />
             </View>
             <View className="bg-white w-11/12 pl-2 h-11 flex flex-row items-center">
               <ShieldCheckIcon color={'#1C1B1F'} size={30} />
-              <Text className="text-black ml-4 mr-44 pr-1 font-Regular text-sm">
+              <Text className="text-black ml-3 mr-40 pr-1 font-Regular text-sm">
                 Privacy Policy
               </Text>
               <ChevronDownIcon color={'#1C1B1F'} size={20} />

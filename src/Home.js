@@ -186,7 +186,7 @@ const Home = ({navigation}) => {
                         UID: 0000001
                       </Text>
                     </View>
-                    <View className="w-12 flex justify-center items-center">
+                    <View className="w-10 flex justify-center items-center">
                       <TouchableOpacity
                         onPress={() => {
                           setPressed(!pressed);
@@ -250,7 +250,7 @@ const Home = ({navigation}) => {
                         UID: 0000001
                       </Text>
                     </View>
-                    <View className="w-12 flex justify-center items-center">
+                    <View className="w-10 flex justify-center items-center">
                       <TouchableOpacity
                         onPress={() => {
                           setPressed(!pressed);
