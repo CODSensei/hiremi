@@ -12,8 +12,12 @@ module.exports = {
         primary: '#0870FF',
         background: '#098CE31A',
         Border: '#098CE3',
+        LBorder: '#098CE31A',
         BlurHR: '#00000040',
         Verified: '#1CAA77',
+        Notch: '#0000001A',
+        Slider: '#0000001A',
+        HR:'#FFFDF1'
       },
     },
   },

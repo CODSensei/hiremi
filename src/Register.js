@@ -17,8 +17,10 @@ import DatePicker from 'react-native-date-picker';
 import {Button} from 'react-native-paper';
 import {Dropdown} from 'react-native-element-dropdown';
 import {
+  CalendarDaysIcon,
   EyeIcon,
   EyeSlashIcon,
+  HeartIcon,
   LockClosedIcon,
 } from 'react-native-heroicons/outline';
 
@@ -178,10 +180,7 @@ const Register = ({navigation}) => {
         </Text>
         <View className="flex flex-row justify-between  mx-8 h-12 mt-2 border rounded border-Border">
           <View className="border-0.5 border-Border w-12 flex justify-center items-center">
-            <FontAwesomeIcon
-              icon={faCalendarDays}
-              color={'#098CE3'}
-              size={22}></FontAwesomeIcon>
+            <CalendarDaysIcon stroke={'#098ce3'} size={30}/>
           </View>
           <TextInput
             className="pl-3 mr-[92px] w-32 pb-1  font-Regular text-base"
