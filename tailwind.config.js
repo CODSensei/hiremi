@@ -17,7 +17,10 @@ module.exports = {
         Verified: '#1CAA77',
         Notch: '#0000001A',
         Slider: '#0000001A',
-        HR:'#FFFDF1'
+        HR:'#FFFDF1',
+        Support:'#FFFDF1',
+        Sub:'#00000080',
+        Danger: '#DC143C',
       },
     },
   },

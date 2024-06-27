@@ -1,7 +1,7 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, } from '@react-navigation/native';
 import Splash from './Splash';
 import Login from './Login';
 import Register from './Register';

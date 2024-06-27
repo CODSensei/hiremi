@@ -12,7 +12,7 @@ import {
 import React from 'react';
 import {LockClosedIcon, UserCircleIcon} from 'react-native-heroicons/outline';
 
-const Login = ({navigation}) => {
+const Login = ({navigation,tabs}) => {
   return (
     <>
       <ScrollView className="bg-background flex flex-1 ">

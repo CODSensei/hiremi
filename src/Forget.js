@@ -25,10 +25,10 @@ const Forget = ({navigation}) => {
           className="self-center w-[88.42px] h-[22px] top-10"
         />
 
-        <Text className="text-black font-Medium text-center text-[22px] top-16">
+        <Text className="text-black font-Medium text-center text-2xl top-16">
           Forget Your Password
         </Text>
-        <Text className="text-black font-Regular text-center text-[22px] top-16">
+        <Text className="text-black font-Regular text-center text-2xl top-16">
           No worries, it happens!
         </Text>
         <Image
