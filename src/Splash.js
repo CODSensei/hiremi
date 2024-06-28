@@ -20,16 +20,16 @@ const Splash = ({navigation}) => {
         <Animatable.Image
           delay={500}
           animation={zoom}
-          duration={1000}
+          duration={1500}
           easing="ease-out"
           source={require(`../assets/images/Tie.png`)}
         />
       </View>
-      <View className="bottom-10">
+      <View className="bottom-12">
         <Animated.Image
           className="flex justify-center items-center"
           entering={FadeIn.delay(2500)}
-          duration={2000}
+          duration={3000}
           source={require(`../assets/images/Text.png`)}
         />
       </View>

@@ -14,17 +14,13 @@ import {
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronUpIcon,
-  Cog6ToothIcon,
   ExclamationCircleIcon,
-  HomeIcon,
-  IdentificationIcon,
   ShieldCheckIcon,
   UserCircleIcon,
 } from 'react-native-heroicons/outline';
 
 const Profile = ({navigation}) => {
   const [clicked, setClicked] = useState(false);
-  const [first, setFirst] = useState(false);
 
   return (
     <View className="bg-background flex flex-1">

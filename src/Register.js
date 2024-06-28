@@ -96,26 +96,26 @@ const Register = ({navigation}) => {
       <Image
         source={require(`../assets/images/Text.png`)}
         resizeMode="contain"
-        className="self-center w-[88.42px] h-[22px] top-10"
+        className="self-center w-24 h-6 mt-10"
       />
 
-      <Text className="text-black font-Medium text-center text-[22px] top-16">
+      <Text className="text-black font-Medium text-center text-2xl mt-4">
         Register to get started,
       </Text>
-      <Text className="text-black font-Regular text-center text-[22px] top-16">
+      <Text className="text-black font-Regular text-center text-2xl mt-1">
         Start your journey with us.
       </Text>
 
-      <KeyboardAvoidingView className="bg-white w-full h-[1980px] top-24 border border-Border rounded-t-[32px]">
-        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
+      <KeyboardAvoidingView className="bg-white w-full  mt-12 flex-2 h-11/12 border border-Border rounded-t-[32px]">
+        <Text className="text-black font-Semibold text-center mt-8 text-[22px]">
           Personal Information
         </Text>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Your Full Name
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
+        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-1">
           <TextInput
             className="pl-4 pb-1  w-4/5 font-Regular text-base"
               placeholderTextColor={'#00000040'}
@@ -131,7 +131,7 @@ const Register = ({navigation}) => {
           Father's Full Name
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
+        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-1">
           <TextInput
             className="pl-4 pb-1 w-4/5 font-Regular text-base"
               placeholderTextColor={'#00000040'}
@@ -143,10 +143,10 @@ const Register = ({navigation}) => {
             keyboardAppearance="default"></TextInput>
         </View>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-4 ">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-4">
           Gender <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex bg-[`#d9d9d9] flex-row mx-8 mt-2 justify-evenly">
+        <View className="flex bg-[`#d9d9d9] flex-row mx-8 mt-1 justify-evenly">
           <RadioGroup
             layout="row"
             className="font-bold px-8 justify-around font-Regular text-black"
@@ -158,11 +158,11 @@ const Register = ({navigation}) => {
           />
         </View>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-4">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-3">
           Email Address
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
+        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-1">
           <TextInput
             className="pl-4 pb-1 font-Regular w-4/5 text-base"
               placeholderTextColor={'#00000040'}
@@ -178,12 +178,12 @@ const Register = ({navigation}) => {
           Date of Birth
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row justify-between  mx-8 h-12 mt-2 border rounded border-Border">
+        <View className="flex flex-row justify-between  mx-8 h-12 mt-1 border rounded border-Border">
           <View className="border-0.5 border-Border w-12 flex justify-center items-center">
             <CalendarDaysIcon stroke={'#098ce3'} size={30}/>
           </View>
           <TextInput
-            className="pl-3 mr-[92px] w-32 pb-1  font-Regular text-base"
+            className="pl-3 mr-24 w-32 pb-1  font-Regular text-base"
               placeholderTextColor={'#00000040'}
             placeholder="DD/MM/YYYY"
             placeholderStyle={styles.placeholderStyle}
@@ -215,17 +215,17 @@ const Register = ({navigation}) => {
           </>
         </View>
 
-        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
+        <Text className="text-black font-Semibold text-center mt-8 text-2xl">
           Contact Information
         </Text>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Phone Number
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
+        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-1">
           <TextInput
-            className="pl-4 pb-1 w-4/5font-Regular text-base"
+            className="pl-4  w-4/5font-Regular text-base"
               placeholderTextColor={'#00000040'}
             placeholderStyle={styles.placeholderStyle}
             placeholder="+91"
@@ -235,11 +235,11 @@ const Register = ({navigation}) => {
             autoComplete="false"></TextInput>
         </View>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Whatsapp Number
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
+        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-1">
           <TextInput
             className="pl-4 pb-1 w-4/5 font-Regular  text-base"
               placeholderTextColor={'#00000040'}
@@ -251,15 +251,15 @@ const Register = ({navigation}) => {
             autoComplete="false"></TextInput>
         </View>
 
-        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
+        <Text className="text-black font-Semibold text-center mt-10 text-2xl">
           Educational Information
         </Text>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           College Name
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-2">
+        <View className="flex flex-row mx-8 h-12 border rounded border-Border mt-1">
           <TextInput
             className="pl-4 font-Regular pb-1 w-4/5 text-base"
               placeholderTextColor={'#00000040'}
@@ -271,12 +271,12 @@ const Register = ({navigation}) => {
             keyboardAppearance="default"></TextInput>
         </View>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           College's State
           <Text className="text-red-600">*</Text>
         </Text>
         <Dropdown
-          className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+          className="h-12 mx-8 px-4 border rounded border-Border mt-1"
               placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
           labelField="label"
@@ -295,12 +295,12 @@ const Register = ({navigation}) => {
           )}
         />
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Branch
           <Text className="text-red-600">*</Text>
         </Text>
         <Dropdown
-          className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+          className="h-12 mx-8 px-4 border rounded border-Border mt-1"
               placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
           search={true}
@@ -319,12 +319,12 @@ const Register = ({navigation}) => {
           )}
         />
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Degree
           <Text className="text-red-600">*</Text>
         </Text>
         <Dropdown
-          className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+          className="h-12 mx-8 px-4 border rounded border-Border mt-1"
               placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
           search={true}
@@ -343,12 +343,12 @@ const Register = ({navigation}) => {
           )}
         />
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Passout Year
           <Text className="text-red-600">*</Text>
         </Text>
         <Dropdown
-          className="h-12 mx-8 px-4 border rounded border-Border mt-2"
+          className="h-12 mx-8 px-4 border rounded border-Border mt-1"
               placeholderTextColor={'#00000040'}
           placeholderStyle={styles.placeholderStyle}
           search={true}
@@ -367,14 +367,14 @@ const Register = ({navigation}) => {
           )}
         />
 
-        <Text className="text-black font-Semibold text-center mt-10 text-[22px]">
+        <Text className="text-black font-Semibold text-center mt-8 text-2xl">
           Let's Create Password
         </Text>
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-8">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
           Password
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row justify-between  mx-8 h-12 mt-2 border rounded border-Border">
+        <View className="flex flex-row justify-between  mx-8 h-12 mt-1 border rounded border-Border">
           <View className="border-0.5 border-Border w-12 flex justify-center items-center">
             <LockClosedIcon stroke="#098CE3"></LockClosedIcon>
           </View>
@@ -389,7 +389,7 @@ const Register = ({navigation}) => {
             keyboardAppearance="default"
             secureTextEntry={toggle}></TextInput>
           <TouchableOpacity
-            className="ml-[115px] border-0.5 rounded border-Border w-12 flex justify-center items-center"
+            className="ml-28 border-0.5 rounded border-Border w-12 flex justify-center items-center"
             onPress={() => {
               settoggle(!toggle);
             }}>
@@ -401,11 +401,11 @@ const Register = ({navigation}) => {
           </TouchableOpacity>
         </View>
 
-        <Text className="text-black font-Regular text-base text-start ml-8 mt-6">
+        <Text className="text-black font-Regular text-base text-start ml-8 mt-4">
           Confirm New Password
           <Text className="text-red-600">*</Text>
         </Text>
-        <View className="flex flex-row justify-between  mx-8 h-12 mt-2 border rounded border-Border">
+        <View className="flex flex-row justify-between  mx-8 h-12 mt-1 border rounded border-Border">
           <View className="border-0.5 border-Border w-12 flex justify-center items-center">
             <LockClosedIcon stroke="#098CE3"></LockClosedIcon>
           </View>
@@ -420,7 +420,7 @@ const Register = ({navigation}) => {
             keyboardAppearance="default"
             secureTextEntry={toggle2}></TextInput>
           <TouchableOpacity
-            className="ml-[115px] border-0.5 rounded border-Border w-12 flex justify-center items-center"
+            className="ml-28 border-0.5 rounded border-Border w-12 flex justify-center items-center"
             onPress={() => {
               settoggle2(!toggle2);
             }}>
@@ -433,11 +433,11 @@ const Register = ({navigation}) => {
         </View>
 
         <TouchableOpacity
-          className="border border-Border mx-8 h-12 bg-Border rounded mt-8"
+          className="border border-Border mx-8 h-12 bg-Border rounded mt-9 mb-4"
           onPress={() => {
             navigation.navigate('Login');
           }}>
-          <Text className="text-white text-center my-auto font-Regular font-normal text-base">
+          <Text className="text-white text-center my-auto font-Regular text-base">
             Reset Password
           </Text>
         </TouchableOpacity>

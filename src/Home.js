@@ -63,7 +63,7 @@ const Home = ({navigation}) => {
                       resizeMode="contain"
                       className="h-14 ml-2"
                     />
-                    <View className="flex ml-2 mr-8">
+                    <View className="flex ml-2 mr-7">
                       <Text className="text-black font-Medium text-lg">
                         Mr. Mark David Johnson
                       </Text>
@@ -72,7 +72,7 @@ const Home = ({navigation}) => {
                       </Text>
                     </View>
                     <TouchableOpacity
-                      className="self-center mr-2"
+                      className="self-center mr-3"
                       onPress={() => {
                         setPopen(!popen);
                       }}>
@@ -121,7 +121,7 @@ const Home = ({navigation}) => {
                     resizeMode="contain"
                     className="h-14 ml-2"
                   />
-                  <View className="flex ml-2 mr-8">
+                  <View className="flex ml-2 mr-7">
                     <Text className="text-black font-Medium text-lg">
                       Mr. Mark David Johnson
                     </Text>
@@ -131,6 +131,7 @@ const Home = ({navigation}) => {
                   </View>
                   <TouchableOpacity
                     onPress={() => {
+                      className="self-center mr-3"
                       setPopen(!popen);
                     }}>
                     <FontAwesomeIcon
@@ -245,7 +246,7 @@ const Home = ({navigation}) => {
 
       {upper ? (
         <>
-          <>
+          <ScrollView>
             <View className="bg-white mt-5 h-screen rounded-t-[32px] border border-white flex flex-1 items-center drop-shadow-2xl">
               {/* Top notch */}
               <TouchableOpacity
@@ -349,11 +350,11 @@ const Home = ({navigation}) => {
               </View>
               <Text className="text-black font-Regular text-xs ">Training</Text>
             </View>
-          </>
+          </ScrollView>
         </>
       ) : (
         <>
-          <ScrollView>
+          <>
             <View className="bg-white mt-3 h-screen rounded-t-[32px] border border-white flex flex-1 items-center drop-shadow-2xl">
               {/* Top notch */}
               <TouchableOpacity
@@ -457,7 +458,7 @@ const Home = ({navigation}) => {
               </View>
               <Text className="text-black font-Regular text-xs ">Training</Text>
             </View>
-          </ScrollView>
+          </>
         </>
       )}
 
