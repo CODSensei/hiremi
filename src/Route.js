@@ -8,8 +8,9 @@ import Register from './Register';
 import Forget from './Forget';
 import Verification from './Verification';
 import Reset from './Reset';
-import Home from './Home';
 import Profile from './Profile';
+import Tabs from './Tabs';
+
 
 const Route = () => {
   const Stack = createNativeStackNavigator();
@@ -37,7 +38,7 @@ const Route = () => {
         <Stack.Screen name="Forget" component={Forget} />
         <Stack.Screen name="Verification" component={Verification} />
         <Stack.Screen name="Reset" component={Reset} />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Tabs} />
         <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>

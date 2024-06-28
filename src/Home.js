@@ -494,73 +494,7 @@ const Home = ({navigation}) => {
 
       {/* tabs */}
 
-      {/* <View className="bg-slate-400 h-14 w-11/12 mb-1  self-center"> */}
-      <View className="bg-white mt-auto h-14 w-11/12 mb-2 border border-Border rounded-b-3xl self-center flex flex-row justify-around items-center">
-        {first ? (
-          <>
-            <View className="w-2/5 h-14 bg-Border items-center justify-center border border-Border rounded-bl-3xl right-1 flex">
-              <IdentificationIcon
-                color={'#ffffff'}
-                size={30}
-                onPress={() => {
-                  navigation.navigate('Home');
-                  setFirst(!first);
-                }}
-              />
-            </View>
-            <View className="bg-white flex items-center justify-center -top-8 w-16 h-16 rounded-full border border-Border ">
-              <HomeIcon
-                color={'#098ce3'}
-                size={30}
-                onPress={() => {
-                  navigation.navigate('Home');
-                }}
-              />
-            </View>
-            <View className="bg-white w-2/5 left-1 rounded-br-3xl flex border border-Border items-center h-14 justify-center">
-              <Cog6ToothIcon
-                color={'#098ce3'}
-                size={30}
-                onPress={() => {
-                  navigation.navigate('Profile');
-                }}
-              />
-            </View>
-          </>
-        ) : (
-          <>
-            <View className="w-2/5 h-14 bg-white items-center justify-center border border-Border rounded-bl-3xl right-1 flex">
-              <IdentificationIcon
-                color={'#098ce3'}
-                size={30}
-                onPress={() => {
-                  navigation.navigate('Home');
-                }}
-              />
-            </View>
-            <View className="bg-Border flex items-center justify-center -top-8 w-16 h-16 rounded-full border border-Border ">
-              <HomeIcon
-                color={'#ffffff'}
-                size={30}
-                onPress={() => {
-                  navigation.navigate('Home');
-                  setFirst(!first);
-                }}
-              />
-            </View>
-            <View className="bg-white w-2/5 left-1 rounded-br-3xl flex items-center h-14 border border-Border justify-center">
-              <Cog6ToothIcon
-                color={'#098ce3'}
-                size={30}
-                onPress={() => {
-                  navigation.navigate('Profile');
-                }}
-              />
-            </View>
-          </>
-        )}
-      </View>
-      {/* </View> */}
+      
     </View>
   );
 };
